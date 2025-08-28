@@ -39,6 +39,7 @@ while(continuar) {
     } else{ 
         const num1 = Number(entrada("digite o primeiro numero"));
         const num2 = Number(entrada("digite o segundo numero"));
+      
         let resultado;
 
         if(opção === "1" || opção == "+") {
