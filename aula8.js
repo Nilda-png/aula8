@@ -1,1 +1,63 @@
 const entrada = require ('prompt-sync')({sigint:false});
+
+function somar(a,b) {
+    return a + b;
+}
+ 
+function subtrair(a,b) {
+    return a - b;
+}
+
+function multiplicar(a,b) {
+    return a * b;
+}
+
+function dividir(a,b) {
+    if (b === 0) {
+        return "não tem como dividir por zero!";
+    
+    }
+    return a/b;
+}
+
+console.log("=== calculadora simples ===");
+
+let continuar = true;
+while(continuar) {
+    console.log("escolha uma operação:");
+    console.log("[1] soma (+)");
+    console.log("[2] subtração (-)");
+    console.log("[3] multiplicaçaõ (*)");
+    console.log("[4] divisão (/)");
+    console.log("[0] sair");
+
+    const = entrada ("digite a opção:");
+
+    if (opção ==="0") {
+        continuar = false;
+        console.log("encerranmdo a calculadora...");
+    } else{ 
+        const num1 = Number(entrada("digite o primeiro numero"));
+        const num2 = Number(entrada("digite o segundo numero"));
+        let resultado;
+
+        if(opção === "1" || opção == "+") {
+            resultado = somar(num1,num2);
+    } else if (opção === "2" || opção === "-") {
+        resultado = subtrair(num1,num2);
+
+    }else if ( opção "3"  || opção === "*") {
+        resultado = multiplicar(num1,num2);
+    }else if (opção ==="4" || opção === "/") {
+        resultado = dividir(num1,num2);
+    } else {
+        console.log("opção inválida!");
+        continue;
+    }
+
+    console.log("resultado:" , resultado); {
+
+    }
+}
+
+
