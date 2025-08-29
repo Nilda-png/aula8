@@ -1,3 +1,6 @@
+
+const entrada = requireco ('prompt-sync')({sigint:false});
+
 let cardeais = []; // vetor para armazenar objetos
 const total_cardeais = 5;
 
