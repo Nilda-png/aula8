@@ -1,2 +1,0 @@
-const entrada = require ('prompt-sync')({sigint:false});
-
